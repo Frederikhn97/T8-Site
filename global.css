@@ -1,0 +1,34 @@
+/* Standard (light mode) */
+body {
+  background-color: white;
+  color: #111;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #323131;
+  color: white;
+}
+
+/* Topbar / menu */
+body.dark .topbar {
+  background-color: #c5272d;
+}
+
+/* Burger menu */
+body.dark .burger-menu {
+  background-color: #c5272d;
+}
+
+/* Tekst i menu */
+body.dark .menu-icons a,
+body.dark .burger-category,
+body.dark .burger-account {
+  color: white;
+}
+.h3titel {
+  color: rgb(0, 0, 0);
+}
+.h3pris {
+  color: rgb(0, 0, 0);
+}

@@ -1,35 +1,26 @@
-const listContainer = document.querySelector(".productlist");
-const heading = document.querySelector(".tekst");
-let allProducts = [];
+const container = document.querySelector(".productlist");
+const categories = ["smartphones", "laptops", "tablets", "mobile-accessories"];
 
-function getProducts() {
-  fetch("https://dummyjson.com/products/category/smartphones")
+categories.forEach((cat) => {
+  fetch(`https://dummyjson.com/products/category/${cat}`)
     .then((res) => res.json())
-    .then((data) => {
-      allProducts = data.products;
-      showProducts(allProducts);
-    });
-}
+    .then((data) => showProducts(cat, data.products))
+    .catch((err) => console.error(err));
+});
 
-function showProducts(products) {
-  listContainer.innerHTML = "";
+function showProducts(category, products) {
+  let html = `<h2>${category}</h2>`; // valgfrit: titel for kategorien
 
   products.forEach((product) => {
-    listContainer.innerHTML += `
-      
-    
-       <article class="product">
-              
+    html += `
+      <article class="product">
         <img src="${product.thumbnail}">
-        
-         <h2>${product.title}</h2>
+       
         <p class="price">${product.price},-</p>
         <p>${product.description}</p>
-      
-     
       </article>
     `;
   });
+
+  container.innerHTML += html; // += så alle kategorier vises
 }
-console.log();
-getProducts();

@@ -9,9 +9,6 @@
   display: grid;
   grid-template-columns: 1fr;
 }
-.product-info {
-  display: flex;
-}
 
 .price {
   color: #c5272d;

@@ -1,0 +1,47 @@
+.productlist {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 0;
+  margin: 0 auto;
+}
+.product {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.product-info {
+  display: flex;
+}
+
+.price {
+  color: #c5272d;
+}
+.tekst {
+  text-align: center;
+  padding: 15px;
+}
+.stortudvalg {
+  padding: 20px;
+}
+@media (min-width: 1200px) {
+  .productlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 10px;
+  }
+  .product {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #dadada;
+    text-align: center;
+
+    border-radius: 8px;
+  }
+  .tekst {
+    align-items: center;
+  }
+}

@@ -151,7 +151,7 @@
   background-color: #e60000;
   color: white;
   border: none;
-  padding: 8px 36px;
+  padding: 8px 76px;
   font-size: 16px;
   border-radius: 20px;
   cursor: pointer;
@@ -172,13 +172,24 @@
   background: #e6e6e6;
   padding: 20px;
   border-radius: 10px;
-  text-align: left;
+  text-align: center;
 }
 .h3pris {
   margin-top: 10px;
   margin-bottom: 16px;
+  text-align: center;
+  color: red;
+  letter-spacing: 3px;
+  font-weight: 200;
 }
-
+.h3titel {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
 @media (max-width: 768px) {
   .samletfavoritter {
     display: grid;

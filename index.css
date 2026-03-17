@@ -12,11 +12,10 @@
   justify-content: space-between;
   padding: 15px 40px;
 }
-
 .h1popularcategories {
   text-align: center;
   margin-top: 40px;
-  font-size: 48px;
+  font-size: clamp(28px, 4vw, 48px);
 }
 
 .ikonsandcategories {
@@ -403,5 +402,101 @@
 
   .burger-account span {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .samletfavoritter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+    gap: 12px;
+  }
+  .h1popularcategories {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  .favoritter {
+    background: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  /* mindre billeder */
+  .favoritter img {
+    width: 100%;
+    max-width: 160px;
+    display: block;
+    margin: auto;
+  }
+
+  /* mindre tekst */
+  .h3titel {
+    font-size: 16px;
+  }
+
+  .h3pris {
+    font-size: 16px;
+  }
+
+  /* mindre knap */
+  .mybutton {
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+
+  .ikonsandcategories {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .h1popularcategories {
+    text-align: center;
+    margin-top: 40px;
+    /* font-size: 35px; */
+  }
+
+  .samletfavoritter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    gap: 12px;
+  }
+
+  .favoritter {
+    background: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  /* mindre billeder */
+  .favoritter img {
+    width: 100%;
+    max-width: 160px;
+    display: block;
+    margin: auto;
+  }
+
+  /* mindre tekst */
+  .h3titel {
+    font-size: 16px;
+  }
+
+  .h3pris {
+    font-size: 16px;
+  }
+
+  /* mindre knap */
+  .mybutton {
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+
+  .ikonsandcategories {
+    display: flex;
+    flex-direction: column;
   }
 }

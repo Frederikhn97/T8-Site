@@ -6,7 +6,7 @@
 
 .productlist {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr)); /* 🔴 fix */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 28px;
 }
 .product {
@@ -114,8 +114,77 @@
   font-size: 50px;
   text-align: center;
   font-weight: 300;
-  margin-top: 70px; /* 🔴 denne */
+  margin-top: 70px;
   margin-bottom: 16px;
+}
+
+.customerrelations {
+  background-color: #e60000;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+/* Poppover backdrop*/
+::backdrop {
+  opacity: 1;
+  background: #0008;
+}
+/* Poppover*/
+/* Poppover opacity når åbent*/
+[popover]:popover-open {
+  opacity: 1;
+}
+
+@starting-style {
+  [popover]:popover-open {
+    opacity: 0;
+  }
+}
+
+[popover] {
+  margin: auto;
+  padding: 60px 50px;
+  width: 400px;
+  max-width: 100%;
+  border: 1px solid black;
+  opacity: 0;
+  transition: 0.5s allow-discrete;
+}
+.luk-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* Email boks i popover*/
+.email {
+  border: 1px solid black;
+  border-radius: 34px;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 12px;
+}
+/* Tekst nede under knap i popover*/
+.nyhedsbrevet {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+/* Fortsæt knap*/
+.continue {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: red;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .stortudvalg {

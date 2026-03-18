@@ -7,9 +7,11 @@ body {
 /* Dark mode */
 body.dark {
   background-color: #323131;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-
+body.dark h3 {
+  color: #111; /* eller black */
+}
 /* Topbar / menu */
 body.dark .topbar {
   background-color: #c5272d;
@@ -25,4 +27,24 @@ body.dark .menu-icons a,
 body.dark .burger-category,
 body.dark .burger-account {
   color: white;
+}
+body.dark .mybutton {
+  background-color: #c5272d;
+  color: white; /* så teksten er læsbar */
+}
+body.dark .price {
+  color: #c5272d;
+}
+
+body.dark .product-desc {
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 768px) {
+  body.dark .product-desc {
+    color: rgb(255, 255, 255);
+  }
+
+  body.dark .product-title {
+    color: rgb(255, 255, 255);
+  }
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="productlist.css">
+    <link rel="stylesheet" href="global.css">
     <title>Document</title>
 </head>
 
@@ -17,7 +18,7 @@
         </div>
 
         <div class="logo">
-            <img src="logolightmode.png" alt="Electro Logo">
+            <a href="index.html"> <img src="logolightmode.png" alt="Electro Logo"></a>
         </div>
 
         <div class="search-box">
@@ -37,7 +38,7 @@
                 Login
             </a>
 
-            <a href="#">
+            <a href="#" id="darkmode-toggle">
                 <span class="moon-icon">🌙</span>
                 Darkmode
             </a>
@@ -45,16 +46,30 @@
     </header>
     <main>
         <h1 class="tekst"></h1>
-        <h2 class="stortudvalg">Stort udvalg af laptops og tablets fra alle de største brands.</h2>
-        <div class="productlist">
-            <article class="product">
-                <div class="product-info">
 
-                </div>
-            </article>
-        </div>
+        <h2 class="stortudvalg">
+
+        </h2>
+
+        <div class="products"></div>
     </main>
     <script src="productlist.js"></script>
+    <script src="darkmode.js"></script>
+    <button popovertarget="popup">
+        <footer class="footer">Vil du spare 10% ?</footer>
+    </button>
+    <div id="news_popover">
+        <div popover id="popup">
+            <button popovertarget="popup" class="luk-btn">Luk</button>
+            <div class="tilmed">
+                <h2>Kunne du tænke dig at spare 10 % ?</h2>
+            </div>
+            <p class="nyhedsbrevet">Tilmeld dig nyhedsbrevet her og få 10 % på dit første køb</p>
+            <input type="email" placeholder="Indtast email" class="email">
+            <button class="continue">Fortsæt</button>
+
+        </div>
+    </div>
 </body>
 
 </html>

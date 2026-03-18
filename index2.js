@@ -3,7 +3,7 @@ const id = params.get("id");
 
 console.log("id:", id);
 
-const productURL = `https://dummyjson.com/products/categories${id}`;
+const productURL = `https://dummyjson.com/products/categories/${id}`;
 const productContainer = document.querySelector("#productContainer");
 
 function getProduct() {

@@ -34,8 +34,9 @@ function createStarRating(rating) {
 }
 
 function showProducts(category, products) {
-  document.querySelector(".tekst").textContent = category;
-  document.querySelector(".stortudvalg").textContent = `Se det største udvalg af ${category} fra de største brands i verden.`;
+  const displayCategory = category.charAt(0).toUpperCase() + category.slice(1);
+  document.querySelector(".tekst").textContent = displayCategory;
+  document.querySelector(".stortudvalg").textContent = `Se det største udvalg af ${displayCategory} fra de største brands i verden.`;
 
   let html = `<div class="productlist">`;
 

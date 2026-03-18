@@ -18,20 +18,9 @@ if (!category) {
 }
 
 function createStarRating(rating) {
-  const rounded = Math.round(rating);
-  let stars = "";
-
-  for (let i = 1; i <= 5; i++) {
-    if (i <= rounded) {
-      stars += `<span class="star filled">★</span>`;
-    } else {
-      stars += `<span class="star empty">★</span>`;
-    }
-  }
-
   return `
     <div class="rating-wrap">
-      <span class="stars">${stars}</span>
+      <span class="stars" style="color: color: #f5aa00;;">★★★★★</span>
       <span class="rating-value">${rating.toFixed(1)}</span>
     </div>
   `;

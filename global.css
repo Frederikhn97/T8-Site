@@ -46,11 +46,26 @@ body.dark .icon-dark {
 body.dark .h3titel {
   color: black;
 }
-
-body.dark .product {
-  background-color: #dadada;
-  color: #111;
+body.dark .description {
+  color: rgb(0, 0, 0);
 }
-body.dark .stortudvalg {
-  color: #ff2a2a;
+body.dark .title {
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 768px) {
+  body.dark .product {
+    color: #111;
+  }
+  body.dark .stortudvalg {
+    color: #ff2a2a;
+  }
+  body.dark .description {
+    color: white;
+  }
+  body.dark .title {
+    color: white;
+  }
+  body.dark .stortudvalg {
+    color: white;
+  }
 }

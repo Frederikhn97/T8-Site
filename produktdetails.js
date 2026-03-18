@@ -24,20 +24,12 @@ function show(product) {
             <li>Rating: ${product.rating}</li>
             <li>Stock: ${product.stock}</li>
         </ul>
-
-        <div class="colors">
-            <span>Farver</span>
-            <div class="circle light"></div>
-            <div class="circle gray"></div>
-            <div class="circle black"></div>
-            <div class="circle blue"></div>
-        </div>
     </div>
 
     <div class="description">
         <h2>About product</h2>
         <p>${product.description}</p>
-        <button class="button">Tilføj til kurv</button>
+        <button class="btn">Tilføj til kurv</button>
     </div>
 
   `;

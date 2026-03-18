@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktliste</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="productlist.css">
-    <title>Document</title>
 </head>
 
 <body>
+
     <header class="topbar">
         <div class="burger">
             <i class="fa fa-bars"></i>
@@ -37,24 +39,27 @@
                 Login
             </a>
 
-            <a href="#">
+            <a href="#" id="darkmode-toggle">
                 <span class="moon-icon">🌙</span>
                 Darkmode
             </a>
         </nav>
     </header>
-    <main>
-        <h1 class="tekst"></h1>
-        <h2 class="stortudvalg">Stort udvalg af laptops og tablets fra alle de største brands.</h2>
-        <div class="productlist">
-            <article class="product">
-                <div class="product-info">
 
-                </div>
-            </article>
-        </div>
+    <main>
+        <h1 class="tekst" id="categoryTitle"></h1>
+
+        <h2 class="stortudvalg">
+            Stort udvalg af produkter fra alle de største brands.
+        </h2>
+
+        <!-- 🔥 VIGTIG: tom container -->
+        <div class="productlist" id="productContainer"></div>
     </main>
+
     <script src="productlist.js"></script>
+    <script src="darkmode.js"></script>
+
 </body>
 
 </html>

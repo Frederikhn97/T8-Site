@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="produktdetails.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="global.css">
-    <script src="produktdetails.js" defer></script>
-    <script src="darkmode.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -19,7 +23,7 @@
         </div>
 
         <div class="logo">
-            <img src="logolightmode.png" alt="Electro Logo">
+            <a href="index.html"><img src="logolightmode.png" alt="Electro Logo"></a>
         </div>
 
         <div class="search-box">
@@ -34,7 +38,7 @@
                 Indkøbskurv
             </a>
 
-            <a href="#">
+            <a href="forms.html">
                 <img src="ikoner/Single-Neutral-Circle--Streamline-Ultimate.svg" alt="Login">
                 Login
             </a>
@@ -45,11 +49,79 @@
             </a>
         </nav>
     </header>
+
+    <div class="burger-menu">
+        <div class="burger-top">
+            <img src="logolightmode.png" alt="Electro Logo" class="burger-logo">
+        </div>
+
+        <div class="burger-search">
+            <i class="fa fa-search"></i>
+            <span>Søg</span>
+        </div>
+
+        <div class="burger-categories">
+            <a href="#" class="burger-category">
+                <span>LAPTOPS AND TABLETS</span>
+                <div class="burger-icons">
+                    <img src="ikoner/Categories/Laptop--Streamline-Ultimate.svg" alt="Laptop">
+                    <img src="ikoner/Categories/Tablet--Streamline-Ultimate.svg" alt="Tablet">
+                </div>
+                <div class="burger-arrow">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="#" class="burger-category">
+                <span>SMARTPHONES</span>
+                <div class="burger-icons">
+                    <img src="ikoner/Categories/Phone-Type--Streamline-Ultimate.svg" alt="Smartphone">
+                </div>
+                <div class="burger-arrow">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="#" class="burger-category">
+                <span>SMARTWATCHES</span>
+                <div class="burger-icons">
+                    <img src="ikoner/Categories/Smart-Watch-Square-Power--Streamline-Ultimate.svg" alt="Smartwatch">
+                </div>
+                <div class="burger-arrow">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="#" class="burger-category">
+                <span>Din nærmeste ElectroHub</span>
+                <div class="burger-icons">
+                    <img src="ikoner/location.svg" alt="Lokation">
+                </div>
+                <div class="burger-arrow">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="burger-bottom">
+            <a href="#" class="burger-account">
+                <img src="ikoner/Single-Neutral-Circle--Streamline-Ultimate.svg" alt="Login">
+                <span>Login</span>
+            </a>
+
+            <a href="#" class="burger-account">
+                <img src="ikoner/signup.svg" alt="Signup">
+                <span>Signup</span>
+            </a>
+        </div>
+    </div>
     <main class="main-details">
         <div class="card">
             <!-- her kommer data -->
         </div>
     </main>
+    <script src="produktdetails.js" defer></script>
+    <script src="darkmode.js" defer></script>
 </body>
 
 </html>

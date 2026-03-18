@@ -34,6 +34,10 @@
   align-items: center;
   gap: 20px;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .ikonscategoriesindividual img {
   width: 120px; /* gør ikoner større */
   height: auto;

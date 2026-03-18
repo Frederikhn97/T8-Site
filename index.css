@@ -15,7 +15,8 @@
 .h1popularcategories {
   text-align: center;
   margin-top: 40px;
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: 50px;
+  font-weight: 200;
 }
 
 .ikonsandcategories {
@@ -30,7 +31,7 @@
 
 .ikonscategoriesindividual {
   display: flex;
-  flex-direction: column; /* h2 øverst, ikoner under */
+  flex-direction: column;
   align-items: center;
   gap: 20px;
 }
@@ -39,7 +40,7 @@ a {
   color: inherit;
 }
 .ikonscategoriesindividual img {
-  width: 120px; /* gør ikoner større */
+  width: 120px;
   height: auto;
 }
 .h2techfavoritter {
@@ -47,7 +48,6 @@ a {
   margin-top: 80px;
   font-size: 42px;
 }
-/* LOGO */
 
 .logo {
   font-size: 28px;
@@ -62,8 +62,6 @@ a {
 .logo .tro {
   color: white;
 }
-
-/* SEARCH */
 
 .search-box {
   display: flex;
@@ -101,14 +99,11 @@ a {
   cursor: pointer;
 }
 
-/* MENU LINKS */
-
 .menu-icons {
   display: flex;
   gap: 35px;
 }
 
-/* hvert ikon + tekst */
 .menu-icons a {
   display: flex;
   flex-direction: column;
@@ -121,7 +116,6 @@ a {
   gap: 8px;
 }
 
-/* PNG ikoner */
 .menu-icons img {
   height: 28px;
   width: auto;
@@ -129,7 +123,6 @@ a {
   filter: brightness(0) invert(1);
 }
 
-/* måne ikon (HTML) */
 .moon-icon {
   height: 28px;
   display: flex;
@@ -139,7 +132,6 @@ a {
   line-height: 1;
 }
 
-/* logo */
 .logo img {
   height: 40px;
   width: auto;
@@ -152,7 +144,7 @@ a {
   margin-bottom: 32px;
 }
 .mybutton {
-  background-color: #e60000;
+  background-color: #ff0000;
   color: white;
   border: none;
   padding: 8px 76px;
@@ -177,6 +169,10 @@ a {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.favoritter:hover {
+  transform: scale(1.03);
 }
 .h3pris {
   margin-top: 10px;
@@ -208,7 +204,6 @@ a {
     border-radius: 10px;
   }
 
-  /* mindre billeder */
   .favoritter img {
     width: 100%;
     max-width: 160px;
@@ -216,7 +211,6 @@ a {
     margin: auto;
   }
 
-  /* mindre tekst */
   .h3titel {
     font-size: 16px;
   }
@@ -225,7 +219,6 @@ a {
     font-size: 16px;
   }
 
-  /* mindre knap */
   .mybutton {
     padding: 6px 20px;
     font-size: 14px;
@@ -236,7 +229,7 @@ a {
     flex-direction: column;
   }
 }
-/* BURGER BUTTON */
+
 .burger {
   display: none;
   font-size: 28px;
@@ -244,7 +237,6 @@ a {
   cursor: pointer;
 }
 
-/* BURGER MENU */
 .burger-menu {
   display: none;
   opacity: 0;
@@ -364,7 +356,6 @@ a {
   font-size: 20px;
 }
 
-/* MOBIL */
 @media (max-width: 768px) {
   .search-box,
   .menu-icons {
@@ -384,7 +375,6 @@ a {
   }
 }
 
-/* EKSTRA SMÅ SKÆRME */
 @media (max-width: 520px) {
   .burger-logo {
     width: 180px;
@@ -438,7 +428,6 @@ a {
     border-radius: 10px;
   }
 
-  /* mindre billeder */
   .favoritter img {
     width: 100%;
     max-width: 160px;
@@ -446,7 +435,6 @@ a {
     margin: auto;
   }
 
-  /* mindre tekst */
   .h3titel {
     font-size: 16px;
   }
@@ -455,7 +443,6 @@ a {
     font-size: 16px;
   }
 
-  /* mindre knap */
   .mybutton {
     padding: 6px 20px;
     font-size: 14px;
@@ -464,6 +451,13 @@ a {
   .ikonsandcategories {
     display: flex;
     flex-direction: column;
+    gap: 25px;
+    padding: 80px;
+  }
+  .ikonscategoriesindividual {
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    padding: 30px;
   }
 }
 
@@ -487,7 +481,6 @@ a {
     border-radius: 10px;
   }
 
-  /* mindre billeder */
   .favoritter img {
     width: 100%;
     max-width: 160px;
@@ -495,7 +488,6 @@ a {
     margin: auto;
   }
 
-  /* mindre tekst */
   .h3titel {
     font-size: 16px;
   }
@@ -504,14 +496,14 @@ a {
     font-size: 16px;
   }
 
-  /* mindre knap */
   .mybutton {
     padding: 6px 20px;
     font-size: 14px;
   }
 
-  .ikonsandcategories {
-    display: flex;
-    flex-direction: column;
+  .ikonscategoriesindividual {
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    padding: 30px;
   }
 }

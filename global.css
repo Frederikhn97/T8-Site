@@ -27,7 +27,7 @@ body.dark .burger-account {
   color: black;
 }
 
-.icon-light {
+/* .icon-light {
   display: inline-block;
 }
 
@@ -41,7 +41,7 @@ body.dark .icon-light {
 
 body.dark .icon-dark {
   display: inline-block;
-}
+} */
 
 body.dark .h3titel {
   color: black;

@@ -51,7 +51,7 @@ function showProducts(category, products) {
           <p class="description">${product.description}</p>
 
           <div class="product-bottom">
-            <a href="produktdetails.html" class="read-more">Læs mere</a>
+            <a href="produktdetails.html?id=${product.id}" class="read-more">Læs mere</a>
             ${createStarRating(product.rating)}
           </div>
         </div>

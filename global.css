@@ -41,3 +41,11 @@ body.dark .icon-dark {
 body.dark .h3titel {
   color: black;
 }
+
+body.dark .product {
+  background-color: #dadada;
+  color: #111;
+}
+body.dark .stortudvalg {
+  color: #ff2a2a;
+}

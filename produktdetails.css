@@ -29,8 +29,9 @@ li {
 
 .price {
   font-size: 28px;
-  color: #000000;
+  color: #ff0000;
   margin-top: 10px;
+  font-weight: 700;
 }
 
 /* COLORS */

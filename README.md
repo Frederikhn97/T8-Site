@@ -18,15 +18,15 @@ Andre ressourser er gemt på Figma
 ```
 Tema8_WEB_II/
 ├── index.html
-├── produktlist.html
+├── productlist.html
 ├── produktdetails.html
-├── kunde_service.html
+├── forms.html
 ├── global.css
 ├── index.css
 ├── produktlist.css
 ├── produktdetails.css
-├── kunde_service.css
-├── index.js
+├── forms_style.css
+├── darkmode.js
 ├── produktlist.js
 ├── produktdetails.js
 ├── kunde_service.js

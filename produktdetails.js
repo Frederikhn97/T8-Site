@@ -12,7 +12,7 @@ function show(product) {
     
     <div class="image">
         <img src="${product.thumbnail}" alt="${product.title}">
-        <h1>${product.title}</h1>
+        <h2>${product.title}</h2>
         <p class="price">${product.price},-</p>
     </div>
 

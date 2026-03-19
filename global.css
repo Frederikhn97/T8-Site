@@ -107,6 +107,7 @@ p {
   font-size: 14px;
   font-style: normal;
 }
+
 @media (max-width: 768px) {
   body.dark .product {
     color: #111;

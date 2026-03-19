@@ -124,4 +124,8 @@ p {
   body.dark .stortudvalg {
     color: white;
   }
+
+  body.dark .rating-value {
+    color: white;
+  }
 }

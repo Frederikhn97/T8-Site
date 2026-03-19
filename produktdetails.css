@@ -29,7 +29,7 @@ li {
 
 .price {
   font-size: 28px;
-  color: #ff3b3b;
+  color: #000000;
   margin-top: 10px;
 }
 
@@ -82,12 +82,12 @@ li {
 .btn {
   margin-top: 15px;
   padding: 12px 25px;
-  width: 35%;
+  width: 250px;
   border: none;
   border-radius: 25px;
   background: #ff0000;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -104,6 +104,10 @@ button:hover {
   }
   .btn {
     display: block;
-    margin: 15px auto 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 30px;
   }
 }

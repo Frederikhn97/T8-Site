@@ -18,12 +18,15 @@ input,
 label {
   margin: 0.4rem 0;
 }
-
+.mybutton {
+  font-size: 20px;
+}
 .opret_bruger {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px 34px;
   align-items: start;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 900px) {
